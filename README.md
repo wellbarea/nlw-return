@@ -1,40 +1,100 @@
-In the project directory, you can run:
+# 🚀 Feedget - Widget de Feedback
 
-### `npm start`
+Um widget de feedback moderno e interativo construído durante o evento **NLW Return** da Rocketseat. Permite que usuários enviem feedbacks categorizados de forma simples e intuitiva.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ✨ Funcionalidades
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- 📝 **Feedback Categorizado**: Classifique feedback como Bug, Ideia ou Outro
+- 📸 **Captura de Tela**: Anexe screenshots automaticamente ao feedback
+- 🎨 **Interface Moderna**: Design responsivo com Tailwind CSS
+- ⚡ **Performance Otimizada**: Construído com Vite para desenvolvimento rápido
+- 🔧 **TypeScript**: Tipagem estática para maior confiabilidade
 
-### `npm test`
+## 🛠️ Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 18** - Biblioteca para construção da interface
+- **TypeScript** - Tipagem estática para JavaScript
+- **Vite** - Build tool moderna e rápida
+- **Tailwind CSS** - Framework CSS utilitário
+- **HeadlessUI** - Componentes acessíveis para React
+- **Phosphor Icons** - Ícones modernos
+- **html2canvas** - Captura de screenshots
 
-### `npm run build`
+## 🚀 Como Executar
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Node.js (versão 16 ou superior)
+- npm ou yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instalação
 
-### `npm run eject`
+1. Clone o repositório:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/seu-usuario/nlw-return.git
+cd nlw-return
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Instale as dependências:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Execute o projeto em modo de desenvolvimento:
 
-## Learn More
+```bash
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Abra [http://localhost:5173](http://localhost:5173) no seu navegador
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📦 Scripts Disponíveis
+
+- `npm run dev` - Executa o app em modo de desenvolvimento
+- `npm run build` - Cria uma build otimizada para produção
+- `npm run preview` - Visualiza a build de produção localmente
+
+## 🏗️ Estrutura do Projeto
+
+```
+src/
+├── components/
+│   ├── CloseButton.tsx          # Botão de fechar modal
+│   ├── Widget.tsx               # Componente principal do widget
+│   └── WidgetForm/
+│       ├── index.tsx            # Formulário principal
+│       ├── Loading.tsx          # Componente de carregamento
+│       ├── ScreenshotButton.tsx # Botão para captura de tela
+│       └── Steps/
+│           ├── FeedbackTypeStep.tsx     # Seleção do tipo de feedback
+│           ├── FeedbackContentStep.tsx  # Conteúdo do feedback
+│           └── FeedbackSuccessStep.tsx  # Confirmação de envio
+├── assets/          # Ícones e imagens
+├── App.tsx         # Componente raiz
+└── main.tsx        # Ponto de entrada da aplicação
+```
+
+## 🎯 Como Usar
+
+1. Clique no botão de feedback no canto inferior direito da tela
+2. Selecione o tipo de feedback (Bug, Ideia ou Outro)
+3. Descreva seu feedback no campo de texto
+4. Opcionalmente, capture uma screenshot da tela
+5. Envie seu feedback
+
+## 📝 Licença
+
+Este projeto foi desenvolvido durante o evento NLW Return da [Rocketseat](https://rocketseat.com.br/).
+
+## 🙏 Agradecimentos
+
+- [Rocketseat](https://rocketseat.com.br/) pelo evento NLW Return
+- Comunidade de desenvolvedores que contribuiu com feedback e sugestões
+
+---
+
+<div align="center">
+  Feito com ❤️ durante o NLW Return
+</div>
